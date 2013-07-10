@@ -1,0 +1,15 @@
+Deploy this app to Heroku:
+
+$ heroku create
+// This creates a new application on Heroku, along with a Git 
+// remote that must be used to receive your application source
+
+$ git remote -v (verify the remote)
+
+
+// You can also take an existing Git repo and add a remote using your Git URL
+// 
+heroku git:remote -a falling-wind-1624
+
+// Push to Heroku
+$ git push heroku master
