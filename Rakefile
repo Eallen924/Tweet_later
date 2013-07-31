@@ -1,5 +1,5 @@
 require 'rake'
-require 'rspec/core/rake_task'
+# require 'rspec/core/rake_task'
 
 
 require ::File.expand_path('../config/environment', __FILE__)
@@ -123,9 +123,9 @@ task "console" do
   exec "irb -r./config/environment"
 end
 
-if Sinatra::Application.development?
-  desc "Run the specs"
-  RSpec::Core::RakeTask.new(:spec)
-end
+# if Sinatra::Application.development?
+#   desc "Run the specs"
+#   RSpec::Core::RakeTask.new(:spec)
+# end
 
-  task :default  => :specs
+#   task :default  => :specs
