@@ -26,7 +26,7 @@ require 'ap' if development?
 
 require 'redis'
 require 'sidekiq'
-require 'sidekiq/capistrano'
+# require 'sidekiq/capistrano'
 
 require 'debugger' if Sinatra::Application.development?
 # Some helper constants for path-centric logic
