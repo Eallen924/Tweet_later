@@ -1,5 +1,6 @@
-source :rubygems
+source 'https://rubygems.org'
 
+ruby '1.9.3'
 # PostgreSQL driver
 gem 'pg'
 
@@ -10,7 +11,7 @@ gem 'sinatra'
 gem 'thin'
 
 gem 'activesupport'
-gem 'activerecord'
+gem 'activerecord', '~> 3.2.0'
 
 gem 'rake'
 
@@ -22,9 +23,9 @@ gem 'twitter'
 gem 'sidekiq'
 gem 'redis'
 
-gem 'debugger'
-
-group :test do
+group :test, :development do
+	gem 'awesome_print'
+	gem 'debugger'
   gem 'faker'
   gem 'rspec'
 end

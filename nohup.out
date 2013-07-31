@@ -1,0 +1,52 @@
+[19854] 10 Jul 23:02:45.609 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[19854] 10 Jul 23:02:45.611 * Max number of open files set to 10032
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.6.13 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 19854
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[19854] 10 Jul 23:02:45.611 # Server started, Redis version 2.6.13
+[19854] 10 Jul 23:02:45.611 * The server is now ready to accept connections on port 6379
+[19854] 11 Jul 00:22:00.091 * 1 changes in 3600 seconds. Saving...
+[19854] 11 Jul 00:22:00.092 * Background saving started by pid 20129
+[20129] 11 Jul 00:22:00.363 * DB saved on disk
+[19854] 11 Jul 00:22:00.455 * Background saving terminated with success
+[22026] 11 Jul 08:14:09.610 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[22026] 11 Jul 08:14:09.612 * Max number of open files set to 10032
+[22026] 11 Jul 08:14:09.613 # Opening port 6379: bind: Address already in use
+[19854] 11 Jul 08:15:53.903 * 1 changes in 3600 seconds. Saving...
+[19854] 11 Jul 08:15:53.907 * Background saving started by pid 22059
+[22059] 11 Jul 08:15:53.910 * DB saved on disk
+[19854] 11 Jul 08:15:54.009 * Background saving terminated with success
+[22215] 11 Jul 08:17:15.465 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[22215] 11 Jul 08:17:15.467 * Max number of open files set to 10032
+[22215] 11 Jul 08:17:15.467 # Opening port 6379: bind: Address already in use
+[22300] 11 Jul 08:23:53.860 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[22300] 11 Jul 08:23:53.862 * Max number of open files set to 10032
+[22300] 11 Jul 08:23:53.862 # Opening port 6379: bind: Address already in use
+[22332] 11 Jul 08:25:57.871 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[22332] 11 Jul 08:25:57.872 * Max number of open files set to 10032
+[22332] 11 Jul 08:25:57.872 # Opening port 6379: bind: Address already in use
+[19854] 11 Jul 09:15:55.031 * 1 changes in 3600 seconds. Saving...
+[19854] 11 Jul 09:15:55.032 * Background saving started by pid 23212
+[23212] 11 Jul 09:15:55.034 * DB saved on disk
+[19854] 11 Jul 09:15:55.133 * Background saving terminated with success
+[19854 | signal handler] (1373868024) Received SIGTERM, scheduling shutdown...
+[19854 | signal handler] (1373868024) Received SIGTERM, scheduling shutdown...
+[19854] 15 Jul 01:00:24.752 # User requested shutdown...
+[19854] 15 Jul 01:00:24.755 * Saving the final RDB snapshot before exiting.
+[19854] 15 Jul 01:00:24.764 * DB saved on disk
+[19854] 15 Jul 01:00:24.764 # Redis is now ready to exit, bye bye...

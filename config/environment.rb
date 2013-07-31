@@ -22,12 +22,12 @@ require 'erb'
 
 require 'oauth'
 require 'twitter'
+require 'ap' if development?
 
 require 'redis'
 require 'sidekiq'
 
-require 'debugger'
-
+require 'debugger' if Sinatra::Application.development?
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
