@@ -17,7 +17,15 @@
 
   <title></title>
 </head>
+<header>
+  <a class="nav_title" href='/'>Twitter Oauth</a>
+  <% if current_user %>
+  <a class="logout" href="/logout">Logout</a>
+</header>
 <body>
+  <% else %>
+  <button><a href="/sign_in">Sign In with Twitter</a></button>
+  <% end %> 
   <%= yield %>
 </body>
 </html>

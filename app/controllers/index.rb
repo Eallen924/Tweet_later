@@ -6,7 +6,16 @@ get '/' do
   else
     @error = "Did not find any tweets for this user"
   end
-  erb :index
+
+  if request.xhr?
+    tweet = @recent_tweets.first
+    content_type :json
+    {pic: tweet.user.profile_image_url, 
+     username: tweet.user.username,
+     text: tweet.text}.to_json
+  else
+    erb :index
+  end
 end
 
 get '/sign_in' do
@@ -14,7 +23,7 @@ get '/sign_in' do
   redirect request_token.authorize_url
 end
 
-get '/sign_out' do
+get '/logout' do
   session.clear
   redirect '/'
 end
@@ -32,6 +41,7 @@ get '/auth' do
 end
 
 post '/tweet' do
+  p params
   user = User.find(session[:user])
   # job_id = user.tweet(params[:tweet])
   job_id = user.tweet_later(params[:seconds].to_i, params[:tweet])
