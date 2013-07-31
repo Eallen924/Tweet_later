@@ -22,6 +22,7 @@ gem 'twitter'
 
 gem 'sidekiq'
 gem 'redis'
+gem 'unicorn'
 
 group :test, :development do
 	gem 'awesome_print'
